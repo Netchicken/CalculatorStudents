@@ -1,6 +1,7 @@
 ﻿namespace CalculatorStudents.Operations
 {
-    public class CalcOperations
+
+    public class CalcOperations : CalcOperationsAllMethods
     {
 
         //this is a pure method!
@@ -8,22 +9,21 @@
         {
             if (OperationType == EnumOperationType.Addition)
             {
-                return NumberAd + NumberBd;
+                return Add(NumberAd, NumberBd);
             }
             else if (OperationType == EnumOperationType.Subtraction)
             {
-                return NumberAd - NumberBd;
+                return Subtract(NumberAd, NumberBd);
             }
             else if (OperationType == EnumOperationType.Division)
             {
-                return NumberAd / NumberBd;
+                return Division(NumberAd, NumberBd);
             }
             else if (OperationType == EnumOperationType.Multiplication)
             {
-                return NumberAd * NumberBd;
+                return Multiply(NumberAd, NumberBd);
             }
             return 0;
         }
-
     }
 }

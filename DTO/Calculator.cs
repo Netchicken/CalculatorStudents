@@ -16,6 +16,9 @@ namespace CalculatorStudents.DTO
         [Display(Name = "Choose and Operation")]
         public string? Operation { get; set; }
 
+        [Display(Name = "Show any errors")]
+        public string? ErrorMessage { get; set; }
+
         public EnumOperationType OperationType { get; set; }
 
 
